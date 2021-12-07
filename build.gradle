@@ -2,6 +2,8 @@ plugins {
     id 'java'
 }
 
+sourceCompatibility = 11
+
 group 'ru.netology'
 version '1.0-SNAPSHOT'
 
@@ -10,9 +12,10 @@ repositories {
 }
 
 dependencies {
-    testImplementation 'org.junit.jupiter:junit-jupiter:5.8.2'
+    testImplementation 'org.testng:testng:7.1.0'
+
 }
 
 test {
-    useJUnitPlatform()
+    useTestNG()
 }
